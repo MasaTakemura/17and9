@@ -4,7 +4,6 @@
   "outputDirectory": "public",
   "functions": {
     "api/chat.js": {
-      "runtime": "nodejs20.x",
       "maxDuration": 30
     }
   },
@@ -15,7 +14,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/public/$1"
+      "dest": "/$1"
     }
   ],
   "env": {
